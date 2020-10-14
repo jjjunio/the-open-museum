@@ -1,0 +1,63 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 30px;
+  z-index: 1;
+
+  transition-timing-function: ease-in;
+  transition: all 500ms;
+
+}
+
+.nav__container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.nav__black {
+  background-color: #111;
+}
+
+.nav__main {
+  left: 100px;
+  width: 100px;
+  object-fit: contain;
+  padding-left: 10rem;
+}
+
+.nav__options {
+  position: fixed;
+  right: 200px;
+  display: flex; 
+  flex-direction: row;
+}
+
+.nav__options > a {
+  padding-left: 5rem;
+  color: #111;
+}
+
+.nav__options > a:link {
+  text-decoration: none;
+}
+
+.nav__options > a:visited {
+  text-decoration: none;
+}
+
+.nav__optionSearch {
+  display: flex;
+  align-items: center;
+}
+
+.nav__optionSearch > i {
+  padding-right: 5px;
+}
+
+
+
+
