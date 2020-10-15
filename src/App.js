@@ -12,6 +12,7 @@ function App() {
         <Switch>
           <Route path="/">
             <Nav />
+            <Banner/>
           </Route>
         </Switch>
       </div>
