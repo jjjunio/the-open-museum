@@ -3,42 +3,42 @@
   top: 0;
   width: 100%;
   padding: 20px;
-  height: 30px;
+  height: 80px;
   z-index: 1;
 
   transition-timing-function: ease-in;
   transition: all 500ms;
-
-}
-
-.nav__container {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
 }
 
 .nav__black {
   background-color: #111;
 }
 
+.nav__container {
+  top: -40px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
 .nav__main {
-  left: 100px;
-  width: 100px;
+  left: 140px;
+  width: 140px;
   object-fit: contain;
-  padding-left: 10rem;
+  padding-left: 4rem;
 }
 
 .nav__options {
   position: fixed;
-  right: 200px;
-  display: flex; 
+  right: 100px;
+  display: flex;
   flex-direction: row;
 }
 
 .nav__options > a {
   padding-left: 5rem;
-  color: #111;
+  color: #fff;
 }
 
 .nav__options > a:link {
@@ -57,7 +57,3 @@
 .nav__optionSearch > i {
   padding-right: 5px;
 }
-
-
-
-

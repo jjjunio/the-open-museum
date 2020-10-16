@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 
@@ -7,28 +7,26 @@ function Nav() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 100 ? setShow(true) : setShow(false);
-    })
+      window.scrollY > 120 ? setShow(true) : setShow(false);
+    });
     return () => {
       window.removeEventListener("scroll");
-    }
+    };
   }, []);
 
   return (
-
     <div className={`nav ${show && "nav__black"}`}>
       <div className="nav__container">
         <div className="nav__main">
           <Link to="/home">
             <img
               className="nav__logo"
-              src="Open_Museum_Logo_Dark.svg"
+              src="Open_Museum_Logo_Light.svg"
               alt="Open Museum Logo"
             />
           </Link>
         </div>
         <div className="nav__options">
-
           <Link to="/museums">
             <div className="nav__optionMuseums">
               <p>Museums</p>
@@ -53,13 +51,10 @@ function Nav() {
               <p>Search</p>
             </div>
           </Link>
-
         </div>
       </div>
     </div>
-
-
-  )
+  );
 }
 
 export default Nav;

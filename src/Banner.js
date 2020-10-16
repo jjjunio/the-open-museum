@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./Banner.css";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
@@ -10,19 +10,14 @@ function Banner() {
       <div className="banner__container">
         <div className="banner__image">
           <Carousel interval="10000" navButtonsAlwaysInvisible="true">
-            {
-              images.map((image, i) =>
-                <Image
-                  key={i}
-                  image={image}
-                />
-              )
-            }
+            {images.map((image, i) => (
+              <Image key={i} image={image} />
+            ))}
           </Carousel>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function Image({ image }) {
@@ -34,7 +29,7 @@ function Image({ image }) {
         alt="{image.artist_title}{image.description}"
       />
     </Paper>
-  )
+  );
 }
 
 export default Banner;
